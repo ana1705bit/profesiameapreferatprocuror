@@ -6,7 +6,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<script>
+const sections = document.querySelectorAll("section");
 
+window.addEventListener("scroll", () => {
+    sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        if(top < window.innerHeight - 100){
+            sec.classList.add("show");
+        }
+    });
+});
+</script>
 <header>
     <h1>Responsabilitățile procurorului</h1>
     <nav>
