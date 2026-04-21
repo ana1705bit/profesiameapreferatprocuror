@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/1/1b/Justice.jpg") no-repeat center/cover;
+}
+
+/* EFECT GLASS */
+header, section {
+    backdrop-filter: blur(10px);
+}
+
+/* HEADER */
+header {
+    background: rgba(0,0,0,0.6);
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+/* TITLU CU EFECT */
+h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+h1:hover {
+    color: yellow;
+    text-shadow: 0 0 10px yellow;
+}
+
+/* MENIU PREMIUM */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li a {
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 2px solid rgba(255,255,255,0.5);
+    transition: 0.4s;
+}
+
+nav ul li a:hover {
+    background: yellow;
+    color: black;
+    box-shadow: 0 0 15px yellow;
+    transform: scale(1.1);
+}
+
+/* SECȚIUNI */
+section {
+    margin: 30px;
+    padding: 25px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s;
+}
+
+/* CLASA PENTRU ANIMAȚIE */
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* BUTON MODERN */
+.btn {
+    display: block;
+    margin: 20px auto;
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(45deg, yellow, orange);
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px yellow;
+}
+
+/* TABEL PREMIUM */
+.tabel-luminos {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    color: black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tabel-luminos th {
+    background: orange;
+    color: white;
+}
+
+.tabel-luminos td, .tabel-luminos th {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.tabel-luminos tr:hover {
+    background: yellow;
+    transform: scale(1.02);
+    transition: 0.3s;
+}
+
+/* IMAGINI */
+img {
+    width: 300px;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+img:hover {
+    transform: scale(1.1) rotate(1deg);
+    box-shadow: 0 0 20px white;
+}
+
+/* VIDEO */
+iframe {
+    border-radius: 15px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+iframe:hover {
+    transform: scale(1.05);
+}
