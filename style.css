@@ -63,17 +63,14 @@ section {
     padding: 25px;
     background: rgba(0,0,0,0.5);
     border-radius: 20px;
-    opacity: 0;
-    transform: translateY(40px);
-    transition: 1s;
+    
 }
 
 /* CLASA PENTRU ANIMAȚIE */
 .show {
     opacity: 1;
     section {
-    opacity: 1;
-    transform: translateY(0);
+    
 }
 }
 
