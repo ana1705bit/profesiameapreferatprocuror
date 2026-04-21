@@ -71,7 +71,10 @@ section {
 /* CLASA PENTRU ANIMAȚIE */
 .show {
     opacity: 1;
+    section {
+    opacity: 1;
     transform: translateY(0);
+}
 }
 
 /* BUTON MODERN */
